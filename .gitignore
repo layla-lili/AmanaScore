@@ -1,0 +1,16 @@
+Plan.md
+
+# Local environment secrets
+amana-demo/.env
+amana-demo/.env.*
+hedera-agent-kit-js/
+
+# Dependency installs and transient build outputs
+amana-demo/node_modules/
+amana-demo/dist/
+amana-demo/build/
+amana-demo/.cache/
+
+# Common local clutter
+.DS_Store
+*.log
