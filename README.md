@@ -22,6 +22,7 @@ The compliance rule is intentionally simple and rule-based. It is a small demo, 
 Claude / Groq LLM demo path → Hedera Agent Kit tools → `ShariaCompliancePolicy` → HCS audit log
 
 The transfer pipeline lives in [demo.js](demo.js) and the compliance / HCS logic lives in [shariaPolicy.js](shariaPolicy.js).
+"Compliant with Sharia (AAOIFI) rules" is defined here as: Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) has a set of principles that prohibit riba (interest) and gharar (excessive uncertainty). This demo uses a simple dictionary of compliant vs. non-compliant Hedera testnet accounts to demonstrate how an AI agent can enforce policy gates before touching the blockchain layer.
 
 ## What Works Right Now
 
@@ -94,9 +95,22 @@ Current demo behavior:
 
 Use `HCS_TOPIC_ID=0.0.xxxxx` in `.env` if you want to reuse the same topic between runs.
 
+  ## Real-World Considerations
+  In a real-world production build, this dictionary would be replaced by an on-chain registry, an API call to a Sharia audit provider, or a smart contract registry. For the hackathon demo, using this dictionary inside policy.js cleanly demonstrates how an AI agent can enforce policy gates before touching the blockchain layer.
+
 ## Video
 
 Add the hackathon demo video link here before submission.
+
+## screen Shoots
+![Screen Shot 1](screenshots/logo.png)
+![Screen Shot 2](screenshots/cover.jpeg)
+![Screen Shot 3](screenshots/account.png)
+![Screen Shot 6](screenshots/transactions.png)
+![Screen Shot 4](screenshots/compliant.png)
+![Screen Shot 5](screenshots/non-compliant.png)
+![Screen Shot 6](screenshots/unkown.png)
+
 
 ## Troubleshooting
 
